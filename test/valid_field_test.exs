@@ -127,7 +127,7 @@ defmodule ValidFieldTest do
                  end
   end
 
-  test "nonexisting fields" do
+  test "unknown fields" do
     assert_raise ValidField.UnknownFieldError,
                  "Field \"unknown\" does not exist on schema \"ValidField.Support.Model\".",
                  fn ->
